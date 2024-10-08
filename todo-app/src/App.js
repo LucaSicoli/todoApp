@@ -85,7 +85,7 @@ const App = () => {
                 />
               ) : (
                 <span
-                  className={`flex-1 ${todo.completed ? 'line-through' : ''}`}
+                  className={`flex-1 cursor-pointer ${todo.completed ? 'line-through' : ''}`}
                   onClick={() => toggleComplete(todo._id)}
                 >
                   {todo.text}
